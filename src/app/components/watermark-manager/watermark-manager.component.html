@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+      <div class="col-11">
+          <h4>Watermarked List</h4>
+          <table class="table table-bordered" style="box-shadow:0 3px 5px -1px rgba(0,0,0,.2);">
+              <thead>
+                <tr>
+                  <th scope="col" style="text-align: center">Type</th>
+                  <th scope="col">Name</th>
+                  <th scope="col" style="text-align: center; width:200px">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let watermarkfile of watermarkFiles">
+                  <td style="text-align: center"><img src="https://cdn3.iconfinder.com/data/icons/brands-applications/512/File-512.png" style="width:30px; height:30px"/></td>
+                  <td>{{watermarkfile}}</td>
+                  <td style="text-align: center"> 
+                    <app-download [disabled]="showProgress" [fileName]="watermarkfile" (downloadStatus)="downloadStatus($event)"></app-download>
+                  </td>
+                </tr>
+              </tbody>
+          </table>
+      </div>
+    </div>
+  </div>

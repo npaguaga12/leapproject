@@ -1,1 +1,81 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.button {
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+  
+.upload {
+    background-color: white;
+    float: right;
+    height: 40px;
+    width: 190px;
+    margin: 10px;
+    color: rgb(0, 123, 255);
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    box-shadow:0 3px 5px -1px rgba(0,0,0,.2);
+}
+  
+.download {
+    background-color: white;
+    width: 50px;
+    height: 40px;
+}
+
+.watermark{
+    background-color: white;
+    width: 50px;
+    height: 40px;
+    margin-right: 5px;
+}
+  
+.button.disabled {
+    opacity: 0.4;
+    cursor: default;
+}
+  
+
+
+.container-upload {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+  
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+}
+
+li {
+    font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+    border-bottom: 1px solid #ccc;
+}
+  
+li:last-child {
+    border: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+li a:hover {
+    background: lightgray;
+}
+
+label.error {
+    font-size: 20pt;
+    color: red;
+    text-transform: uppercase;
+}

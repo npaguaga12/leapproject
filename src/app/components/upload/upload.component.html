@@ -1,0 +1,10 @@
+
+<div class="container-upload">
+    <button [disabled]="disabled" [ngClass]="{'disabled': disabled}" class="button upload" (click)="inputFile.click()"><img src="http://www.pngall.com/wp-content/uploads/2/Upload-PNG-Clipart.png" style="width:20px; height:20px; margin-right: 10px"/>UPLOAD</button>
+    <input
+      name="file"
+      id="file"
+      (change)="upload($event)"
+      type="file" #inputFile hidden>
+      
+</div>
